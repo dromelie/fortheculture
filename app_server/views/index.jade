@@ -1,0 +1,89 @@
+extends layout
+
+block content
+  .bd-example.carousel-container
+    #carouselExampleCaptions.carousel.slide.carousel-fade(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='carouselExampleCaptions', data-slide-to='0')
+        li(data-target='carouselExampleCaptions', data-slide-to='1')
+        li(data-target='carouselExampleCaptions', data-slide-to='2')
+      .carousel-inner
+        a.carousel-item.active(data-interval='5000', href='/news/:articleid')
+          img.d-block.w-100(src=carousel.slide1.image, alt='Meek Mill')
+          .carousel-caption.d-none.d-md-block
+            h5= carousel.slide1.imageTitle
+            p= carousel.slide1.imageBio
+        a.carousel-item(data-interval='5000', href='/news/:articleid')
+          img.d-block.w-100(src=carousel.slide2.image, alt='Jay-Z')
+          .carousel-caption.d-none.d-md-block
+            h5= carousel.slide2.imageTitle
+            p= carousel.slide2.imageBio
+        a.carousel-item(data-interval='5000', href='/news/:articleid')
+          img.d-block.w-100(src=carousel.slide3.image, alt='Saint Laurent Don')
+          .carousel-caption.d-none.d-md-block
+            h5= carousel.slide3.imageTitle
+            p= carousel.slide3.imageBio
+      a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+      
+
+  .row.d-flex.flex-row.justify-content-between.placements
+    a.card.mb-4.shadow-sm.p-2.col-md-3.col-sm-5(href=placements.placement1.link, style='width: 18rem; text-decoration: none;')
+      img.card-img-top(src=placements.placement1.image, style='width: 100%;')
+      .card-body
+        p.card-text= placements.placement1.imageText
+    a.card.mb-4.shadow-sm.p-2.col-md-3.col-sm-5(href=placements.placement2.link, style='width: 18rem; text-decoration: none;')
+      img.card-img-top(src=placements.placement2.image, style='width: 100%;')
+      .card-body
+        p.card-text= placements.placement2.imageText
+    a.card.mb-4.shadow-sm.p-2.col-md-3.col-sm-5(href=placements.placement3.link, style='width: 18rem; text-decoration: none;')
+      img.card-img-top(src=placements.placement3.image, style='width: 100%;')
+      .card-body
+        p.card-text= placements.placement3.imageText
+
+  ul.list-group.list-unstyled(style='margin-bottom: 50px;')  
+    a(href=articles.article1.articleLink, style='text-decoration: none;')
+      li.list-item.media
+        img.mr-3(src=articles.article1.articleImage, height='150', width='200')
+        .media-body
+          h5.mt-0.mb-1(style='font-weight: bold')= articles.article1.articleHeader
+          p= articles.article1.articleText
+      hr(style='background-color: white; width: 100%; ')
+    a(href=articles.article2.articleLink, style='text-decoration: none;')
+      li.list-item.media
+        img.mr-3(src=articles.article2.articleImage, height='150', width='200')
+        .media-body
+          h5.mt-0.mb-1(style='font-weight: bold')= articles.article2.articleHeader
+          p= articles.article2.articleText
+      hr(style='background-color: white; width: 100%; ')
+    a(href=articles.article3.articleLink, style='text-decoration: none;')
+      li.list-item.media
+        img.mr-3(src=articles.article3.articleImage, height='150', width='200')
+        .media-body
+          h5.mt-0.mb-1(style='font-weight: bold')= articles.article3.articleHeader
+          p= articles.article3.articleText
+      hr(style='background-color: white; width: 100%; ')
+    a(href=articles.article4.articleLink, style='text-decoration: none;')
+      li.list-item.media
+        img.mr-3(src=articles.article4.articleImage, alt='Nipsey Hussle', height='150', width='200')
+        .media-body
+          h5.mt-0.mb-1(style='font-weight: bold')= articles.article4.articleHeader
+          p= articles.article4.articleText
+      hr(style='background-color: white; width: 100%; ')
+
+  .card
+    .card-header Featured Artist Of The Week
+    .card-body
+      .media
+        img.align-self-start.mr-3(src= oldSchool.image)
+        .media-body
+          h5.mt-0= oldSchool.name
+          p= oldSchool.text
+      a.btn.btn-primary(href= oldSchool.discography, style='margin-top: 20px;') Discography
+
+  
+  

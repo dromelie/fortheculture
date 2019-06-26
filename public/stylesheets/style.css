@@ -1,0 +1,72 @@
+a{
+    color: white;
+}
+
+.placements{
+    padding: 15px;
+    margin-bottom: 75px;
+}
+
+.socialLinks{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.socialLinks a{
+    text-decoration: none;
+}
+
+.footerNav{
+    text-align:center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.articleImgFrame{
+    float: left;
+    display: inline;
+    height: 300px;
+    width: 520px;
+}
+
+.articleText{
+    display: inline;
+}
+
+.tab{
+    text-indent: 50px;
+}
+
+.comment-box{
+    height: 75px;
+    width: 100%;
+    resize: none;
+}
+.comment-section{
+    margin-top: 100px;
+}
+
+.submit-btn{
+    float: right;
+}
+
+.page-numbers{
+    margin-top: 75px;
+    margin-bottom: -30px;
+}
+
+.page-heading{
+    margin-bottom: 50px;
+}
+
+.banner-image{
+    position: relative;
+    width: auto;
+    height: 400px;
+
+}
+
+.carousel-container{
+    margin-bottom: 75px;
+}

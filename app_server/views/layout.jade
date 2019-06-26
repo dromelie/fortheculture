@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/darkly.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='/') For The Culture
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarColor03', aria-controls='navbarColor03', aria-expanded='true', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+
+      #navbarColor03.navbar-collapse.collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/nextUp') Next Up
+          li.nav-item
+            a.nav-link(href='/trending') Trending
+          li.nav-item
+            a.nav-link(href='/artistsAlley') Artist's Alley
+          li.nav-item
+            a.nav-link(href='/intoTheLyrics') Into The Lyrics
+          li.nav-item
+            a.nav-link(href='/history') History
+          li.nav-item
+            a.nav-link(href='/realTalk') Real Talk
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='text' placeholder='Search')
+          button.btn.btn-secondary.my-2.my-sm-0(type='submit') Search
+
+    .container
+      block content
+      
+      hr(style='background-color: white; width: 95%; margin-top: 50px; margin-bottom: -20px;')
+
+      footer
+        ul.footerNav
+          li.socialLinks.btn
+            a(href='#') Face<em style='color: rgb(59, 89, 152);'>book</em>
+          li.socialLinks.btn
+            a(href='#') <em style='color: rgb(29, 202, 255);'>Twitter</em>
+          li.socialLinks.btn
+            a(href='#') Insta<em style='color: rgb(155, 105, 84);'>gram</em>
+          li.socialLinks.btn
+            a(href='#') You<em style='color: rgb(255, 0, 0);'>Tube</em>
+        .row
+          .col-xs-12
+            small &copy; Dalen Romelien 2019
+
+  script(src='../javascripts/jquery-3.3.1.js')
+  script(src='../bootstrap/js/bootstrap.min.js')
+  script(src='../javascripts/scripts.js')
